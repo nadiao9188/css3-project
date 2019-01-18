@@ -1,5 +1,8 @@
 body {
-    background-image: linear-gradient(to top left, rgba(0, 255, 0, 0.7), lightcyan);
+    border: 10px solid;
+    padding: 15px;
+    border-image: url(images/neongreen.jpg) 60 stretch;
+    background: linear-gradient(to top left, rgba(0, 255, 0, 1), lightcyan);
 
 }
 
@@ -7,12 +10,9 @@ h1 {
     font-family: 'Orbitron', cursive;
     text-align: center;
     text-shadow: 2px 2px 5px green;
-    margin: 0px 150px;
+    margin: 10px 150px;
     font-size: 50px;
-    border: 10px solid;
-    padding: 15px;
-    border-image: url(images/neongreen.jpg) 60 stretch;
-    background: linear-gradient(to top left, rgba(0, 255, 0, 0.2), lightcyan);
+
 }
 
 .content {
@@ -25,24 +25,24 @@ h1 {
     padding: 10px;
     position: absolute;
     width: 100px;
-    top: 0px;
-    left: 10px;
-    animation: alien 1s linear 1;
+    top: 20px;
+    left: 80px;
+    animation: alien 1.5s linear 1;
     transition: transform 1.5s ease-in-out;
 }
 
 #alien:hover {
-    transform: rotateY(360deg);
+    transform: rotateY(180deg);
 }
 
 @keyframes alien {
     0% {
         left: -170px;
-        top: 0px;
+        top: 20px;
     }
     100% {
-        left: 10px;
-        top: 0px;
+        left: 80px;
+        top: 20px;
     }
 }
 
@@ -50,24 +50,24 @@ h1 {
 #ufo {
     position: absolute;
     width: 150px;
-    top: 0px;
-    right: 0px;
-    animation: saucer 1s linear 1;
+    top: 5px;
+    right: 80px;
+    animation: ufo 1.5s linear 1;
     transition: transform 1.5s ease-in-out;
 }
 
 #ufo:hover {
-    transform: rotateY(360deg);
+    transform: rotateY(180deg);
 }
 
 @keyframes ufo {
     0% {
         right: -130px;
-        top: 0px;
+        top: 5px;
     }
     100% {
-        right: 0px;
-        top: 0px;
+        top: 5px;
+        right: 80px;
     }
 }
 
@@ -76,29 +76,8 @@ h1 {
     width: 200px;
     height: 150.09375px;
     float: left;
-    margin-top: 50px;
-    /*animation: earth 1s linear 1 ease-in-out;*/
+    margin-top: 40px;
 }
-
-/*@keyframes earth {*/
-
-/*    0% {*/
-
-/*        left: -170px;*/
-
-/*        top: 0px;*/
-
-/*    }*/
-
-/*    100% {*/
-
-/*        float: left;*/
-
-/*        margin-top: 50px;*/
-
-/*    }*/
-
-/*}*/
 
 #space {
     width: 200px;
@@ -118,4 +97,8 @@ h1 {
 span {
     color: red;
     font-size: 33px;
+}
+
+.summary {
+    text-shadow: 2px 2px 5px green;
 }
