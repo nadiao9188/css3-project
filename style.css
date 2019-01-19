@@ -1,104 +1,118 @@
 body {
+    /* The whole webpage is surrounded by a border set to an image and a gradient background. */
     border: 10px solid;
     padding: 15px;
     border-image: url(images/neongreen.jpg) 60 stretch;
     background: linear-gradient(to top left, rgba(0, 255, 0, 1), lightcyan);
-
 }
 
 h1 {
+    /* The header includes the title of the movie. */
     font-family: 'Orbitron', cursive;
     text-align: center;
     text-shadow: 2px 2px 5px green;
     margin: 10px 150px;
     font-size: 50px;
-
 }
 
 .content {
+    /* The questions and the description of the movie are set to a size and are centered */
     font-family: 'Lato', cursive;
     text-align: center;
     font-size: 33px;
 }
 
 #alien {
+    /* Styling of the alien head pic */
     padding: 10px;
     position: absolute;
     width: 100px;
     top: 20px;
     left: 80px;
     animation: alien 1.5s linear 1;
+    /* pic moves from outside to inside the webpage for 1.5 seconds. */
     transition: transform 1.5s ease-in-out;
+    /* pic rotates for 1.5 seconds. */
 }
 
 #alien:hover {
+    /* When mouse hovers over pic, it rotates 180 degrees on the y-axis. */
     transform: rotateY(180deg);
 }
 
 @keyframes alien {
     0% {
+        /* animation starts with the pic being outside of the webpage. */
         left: -170px;
         top: 20px;
     }
     100% {
+        /* animation ends when the pic reaches 80px off of the left side and 20px off of the top of the webpage. */
         left: 80px;
         top: 20px;
     }
 }
 
-
 #ufo {
+    /* Styling of the ufo pic */
     position: absolute;
     width: 150px;
     top: 5px;
     right: 80px;
     animation: ufo 1.5s linear 1;
+    /* pic moves from outside to inside the webpage for 1.5 seconds. */
     transition: transform 1.5s ease-in-out;
+    /* pic rotates for 1.5 seconds. */
 }
 
 #ufo:hover {
     transform: rotateY(180deg);
+    /* When mouse hovers over pic, it rotates 180 degrees on the y-axis. */
 }
 
 @keyframes ufo {
     0% {
+        /* animation starts with the pic being outside of the webpage. */
         right: -130px;
         top: 5px;
     }
     100% {
+        /* animation ends when the pic reaches 80px off of the right side and 5px off of the top of the webpage. */
         top: 5px;
         right: 80px;
     }
 }
 
-
 #earth {
+    /* bottom left image */
     width: 200px;
     height: 150.09375px;
     float: left;
+    /* image is placed as far left as possible */
     margin-top: 40px;
 }
 
 #space {
+    /* bottom right image */
     width: 200px;
     float: right;
+    /* image is placed as far left as possible */
     margin-top: 50px;
 }
 
-.frame {
-    text-align: center;
-}
-
 .input {
+    /* Centers and assigns a font to the text right above the text box to fill in an email. */
     text-align: center;
     font-family: 'Lato';
 }
 
 span {
+    /* highlights questions by setting them to be red. */
     color: red;
     font-size: 33px;
 }
 
-.summary {
+.description {
+    /* gives only the description of the content a green shoadow*/
     text-shadow: 2px 2px 5px green;
 }
